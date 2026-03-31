@@ -1,0 +1,215 @@
+print("HOLA MUNDO DESDE PYTHON")
+
+#Variables de python
+# Enteros
+edad = 20
+# Float
+precio =50.5
+# Str
+nombre = "Bruno diaz"
+# Bool
+bandera = True
+
+#Salida de datos
+print("Nombre: ",nombre)
+print("Edad: ",edad)
+print("Precio: "+str(precio))
+
+#Entrada de datos
+nomre = input("Introduce tu nombre")
+print("HOLA "+nombre)
+
+#Comvercion de cadena
+num1 = input("ingrese el primer numero")
+num2 = input("ingrese el primer segundo")
+suma = num1 + num2
+print("La suma es: ", suma)
+
+num1 = input("ingrese el primer numero")
+num2 = input("ingrese el primer segundo")
+#convercion de str a int, srt a float,
+suma = int(num1) + int(num2)
+print("La suma es: ", suma)
+
+num1 = input("ingrese el primer numero")
+num2 = input("ingrese el primer segundo")
+#convercion de str a int, srt a float,
+suma = float(num1) + float(num2)
+print("La suma es: ", suma)
+
+curso ="Python para iniciantes"
+# metodos
+print(curso.upper())
+print(curso)
+print(curso.lower())
+print(curso.capitalize())
+# Busquedas
+print(curso.find("h"))
+print(curso.find("cia"))
+# REEMPLAZOS
+print(curso.replace("para","FOR"))
+print(curso)
+# Operador
+print("PARA" in curso)
+
+# Operadores matematicos
+print(10 + 5)
+print(10 - 5)
+print(10 * 5)
+print(10 / 4)
+# Divicion entera
+print(10 // 4)
+# Modulo - residuo
+print(10 % 3)
+# Exponente
+print(2 ** 4)
+x = 10
+x = x + 5
+print(x)
+# Operador de asignacion compacto
+y = 20
+y += 5
+print(y)
+# Precedencia
+x = 10 + 3 * 2
+print(x)
+
+# Expreciones booleanas true o false
+# >, >=, <, <=, ==, !=
+x = 3 > 2
+print(x)
+x= 5 == 3
+print(x)
+x = 5 != 3
+print(x)
+# and, or, not, Op logico
+precio = 25
+print(precio > 20 and precio < 30)
+precio = 5
+print(precio(precio > 20 or precio < 30))
+print(not precio > 10)
+ 
+# Sentencis
+temperatura = 18
+if temperatura > 22:
+    print("Esta haciendo calor")
+else:
+    print("hace frio")
+
+if temperatura > 28:
+    print("Esta haciendo calor")
+elif temperatura > 20:
+    print("Es un dia agradable")
+elif temperatura > 10:
+    print("Hace un poco de fio")
+else:
+    print("hace frio , brrrr")
+    
+print("proceso concluido") 
+
+# Bucles
+contador = 12
+while(contador <= 20):
+    print(i)
+    contador += 1
+    
+i = 1
+while(i <= 10):
+    print(1 * "#")
+    i += 1
+    
+# Listas
+frutas = ['Manzana','Fresa','naranjas','pera','maracuya']
+print(frutas)
+print(frutas[0])
+print(frutas[4])
+print(frutas[-2])
+print(frutas[1:4])
+
+# Metodos de listas
+numeros = [1,2,3,4,5]
+# Adicionar elementos a un alista
+numeros.append(6)
+print(numeros)
+# Intertar elementos en una posicion determinada
+numeros.insert(0,-1)
+print(numeros)
+numeros.insert(1,0)
+print(numeros)
+# Eliminar un elemento en su primera aparicion
+numeros.remove(3)
+print(numeros)
+# Verificar si un elemento se encuentra en la lista
+print(3 in numeros)
+# Tamaño de la lista
+print(len(numeros))
+# Eliminar el contenido de la lista
+numeros.clear()
+print(numeros)
+
+# Objeto range
+numeros = range(5)
+print(numeros)
+for item in numeros:
+    print(item)
+for item in range(5,10):
+    print(item)
+    
+for item in range(10,20,2):
+    print(item)
+    
+# Tuplas (inmutables)
+numeros = (1,2,3,4,5,6)
+#imprimiento un elemento
+print(numeros[3])
+# Ocurrencia
+print(numeros.count(5))
+print(numeros.index(5))
+
+# Diccionarios -> Almacen a pares de clave-valor
+mi_diccionario = {'nombre':'Bruno Diaz','edad':25,'Ciudad':'La Paz'}
+print(mi_diccionario)
+# Acceder a un valor
+print(mi_diccionario['nombre'])
+print(mi_diccionario['Ciudad'])
+# Agregar elementos
+mi_diccionario['profecion'] = 'Ingeniero'
+print(mi_diccionario)
+# Eliminar un elemento
+del mi_diccionario['Ciudad']
+print(mi_diccionario)
+# Obtener claves del diccionario
+print(mi_diccionario.keys())
+# Obtener valores del diccionario
+print(mi_diccionario.values())
+# Verificar si una clave existe
+if 'edad'in mi_diccionario:
+    print("Clave encontrada")
+    
+# Recorrido de un dicionario
+for clave, valor in mi_diccionario():
+    print("Clave: "+clave+" Valor: "+valor)
+    
+# Funciones - Son bloques de codigo que realiza una tarea especifica y que son retulizables
+def saludar():
+    print("Hola, bienvenidos al curso de python")
+
+# Funcion con parametros
+def suma(nombre):
+    print("Hola "+nombre+" bienvenido a clases")
+
+# Funcion que devuelve valores
+def suma(a, b):
+    return a + b
+
+# Establecer valores por defecto para los parametros de una funcion
+def bienvenido(nombre="Estudiante"):
+    print("Bienvenido ",nombre)
+    
+# Funcion con argumentos variables
+def sumador(*args):
+    return sum(args)
+
+#lamada a la funcion
+print(sumador(1,2,3,4,5,6))
+print(sumador(4,5,6))
